@@ -7,14 +7,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forex_aploader/fileChange.dart';
+import 'package:forex_aploader/menu.dart';
 
-import 'package:forex_aploader/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget( CSVUPLOAD());
+    await tester.pumpWidget( const Menu());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
